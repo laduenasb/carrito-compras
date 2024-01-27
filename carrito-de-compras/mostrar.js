@@ -36,6 +36,7 @@ function mostrar_productos(productos,id_categoria) {
 			`
 	}
 	categoria.innerHTML+=div_productos
+	// Con esto el carrito de compras vuelve a funcionar por alguna razon se borra el evento agregarAlcarritoCliced en los botones "agregar al carrito" de los productos
 	let botonesAgregarAlCarrito = document.getElementsByClassName('boton-item');
     for(let i=0; i<botonesAgregarAlCarrito.length;i++){
         let button = botonesAgregarAlCarrito[i];
